@@ -1,0 +1,13 @@
+node_modules
+dist
+.git
+.github
+.env
+.env.local
+*.md
+.eslintrc.json
+.prettierrc
+.vscode
+coverage
+.DS_Store
+Thumbs.db

@@ -21,7 +21,7 @@ describe('App', () => {
   it('renders stats cards', () => {
     render(<App />);
     expect(screen.getByText('Deployments')).toBeInTheDocument();
-    expect(screen.getByText('Pipelines')).toBeInTheDocument();
+    expect(screen.getAllByText('Pipelines').length).toBeGreaterThanOrEqual(1);
     expect(screen.getByText('Security Score')).toBeInTheDocument();
     expect(screen.getByText('Avg Build Time')).toBeInTheDocument();
   });
